@@ -36,7 +36,6 @@
                     'leaderboard',
                     't1', {
                     isLazy: false,
-                    alias: 'banner_top'
                     }
                 );
                 //}
@@ -48,7 +47,6 @@
                     'elasticnative',
                     '1', {
                     isLazy: true,
-                    alias: 'elastic-native'
                     }
                 );
             }
@@ -77,7 +75,6 @@
                         'leaderboardrectangle',
                         'b'+realcount, {
                         isLazy: true,
-                        alias: 'inline-banner-'+realcount
                         }
                     );
                     // } else {
@@ -146,7 +143,6 @@
                         'rectangle',
                         x, {
                         isLazy: true,
-                        alias: 'inline-banner-'+x
                         }
                     );
                 }
@@ -154,9 +150,8 @@
                 if (document.getElementById('ad_leaderboard-b1') ) {
                     kaching.defineSlot(
                         'leaderboard',
-                        '1', {
+                        'b1', {
                             isLazy: true,
-                            alias: 'banner_bottom'
                         }
                     );
                 }
