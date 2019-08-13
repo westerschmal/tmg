@@ -74,7 +74,7 @@
                     kaching.defineSlot(
                         'leaderboardrectangle',
                         'b'+realcount, {
-                        isLazy: false,
+                        isLazy: true,
                         }
                     );
                     // } else {
@@ -135,14 +135,14 @@
                     ], 'wpk_desktop_sidebar' + x).addService(googletag.pubads());*/
 
                     //document.querySelector('.aside-wrap').insertAdjacentHTML('beforeend', '<div class="sticky-banner-container "  style="position:relative;" id="sticky-banner-container' + x + '"><div class="sticky-banner" id="wpk_desktop_sidebar' + x + '" style="text-align:center;width:300px;position:sticky;top: 20px;"></div></div>');
-                    document.querySelector('.aside-wrap').insertAdjacentHTML('beforeend', '<div class="sticky-banner-container "  style="position:relative;" id="sticky-banner-container' + x + '"><div class="ad ad--rectangle sticky-banner" id="ad_rectangle-'+x+'" style="text-align:center;width:300px;position:sticky;top: 20px;"></div></div>');
+                    document.querySelector('.aside-wrap').insertAdjacentHTML('beforeend', '<div class="sticky-banner-container "  style="position:relative;" id="sticky-banner-container' + x + '"><div class="ad ad--rectangle sticky-banner" id="ad_rectangle-b'+x+'" style="text-align:center;width:300px;position:sticky;top: 20px;"></div></div>');
                     document.querySelector('#sticky-banner-container' + x).style.height = banner_container_height + '%';
                     document.querySelector('aside').style.height = aside_h + 'px';
                     document.querySelector('.aside-wrap').style.height = '100%';
                     kaching.defineSlot(
                         'rectangle',
-                        x, {
-                        isLazy: false,
+                        'b'+ x, {
+                        isLazy: true,
                         }
                     );
                 }
@@ -151,7 +151,7 @@
                     kaching.defineSlot(
                         'leaderboard',
                         'b1', {
-                            isLazy: false,
+                            isLazy: true,
                         }
                     );
                 }
